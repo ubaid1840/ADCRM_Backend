@@ -32,8 +32,11 @@ const userSchema = new mongoose.Schema({
   email: String,
   designation: String,
   dp: String,
-  company: String
-},{
+  company: {
+    type: String,
+    default: 'Senfeng'
+  }
+}, {
   collection: 'AllowedUsers' // Define the custom collection name here
 });
 
