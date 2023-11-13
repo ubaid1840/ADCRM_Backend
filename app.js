@@ -5,7 +5,7 @@ const attendanceRoutes = require('./routes/attendanceRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 require('dotenv').config()
 
-const app = express();
+const app = express()
 app.use(express.json());
 const cors = require('cors');
 
