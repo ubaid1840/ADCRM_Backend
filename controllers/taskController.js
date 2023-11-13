@@ -53,7 +53,7 @@ const taskController = {
   // Delete a task by ID
   deleteTask: async (req, res) => {
     try {
-      const task = await Task.findByIdAndRemove(req.params.id);
+      const task = await Task.findByIdAndDelete(req.params.id);
       if (task) {
         res.json({ message: 'Task deleted' });
       } else {
